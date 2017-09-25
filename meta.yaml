@@ -1,0 +1,19 @@
+package:
+    name: usb-ids
+    version: 2017.09.10
+
+build:
+    number: 0
+    script: python "{{ RECIPE_DIR }}/build.py"
+
+requirements:
+    build:
+        - python 2.7*
+        - path_helpers
+
+    run:
+        - bz2
+
+about:
+  home: https://github.com/sci-bots/usb-ids
+  license: BSD-3
